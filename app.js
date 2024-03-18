@@ -2,30 +2,34 @@ let Titulo = document.title;
 
 window.addEventListener('blur', () => {
     Titulo = document.title;
-    document.title = "No te vallas, regresa :(";
+    document.title = "No te vayas, regresa :(";
 })
 
 window.addEventListener('focus', () => {
     document.title = Titulo;
 })
 
-let h1 = document.getElementById("Titulo");
-let Boton1 = document.getElementById("B1");
-Boton1.addEventListener('click', function() {
-    const ContenedorBotones = document.querySelector(".Con");
-    document.querySelector(".Texto").style.display = "block";
-    ContenedorBotones.style.display = "none";
-    DibujarFlor(500, 100, 6, 30, 100, 200);
-    h1.remove();
-})
+// Seleccionar el elemento h1 después de que el DOM haya cargado
+document.addEventListener("DOMContentLoaded", function() {
+    let h1 = document.getElementById("Titulo");
+    let Boton1 = document.getElementById("B1");
 
-document.getElementById("B12").addEventListener('click', function() {
-    const ContenedorBotones = document.querySelector(".Con");
-    ContenedorBotones.style.display = "none";
-    document.querySelector(".Texto").style.display = "block";
-    CrearVarias();
-    h1.remove();
-})
+    Boton1.addEventListener('click', function() {
+        const ContenedorBotones = document.querySelector(".Con");
+        document.querySelector(".Texto").style.display = "block";
+        ContenedorBotones.style.display = "none";
+        DibujarFlor(500, 100, 6, 30, 100, 200);
+        h1.remove();
+    });
+
+    document.getElementById("B12").addEventListener('click', function() {
+        const ContenedorBotones = document.querySelector(".Con");
+        ContenedorBotones.style.display = "none";
+        document.querySelector(".Texto").style.display = "block";
+        CrearVarias();
+        h1.remove();
+    });
+});
 
 const canvas = document.getElementById('Flor');
 const ctx = canvas.getContext('2d');
