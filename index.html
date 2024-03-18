@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <style>
         body {
-            background-color: #f8e0e0; /* Color de fondo romántico */
-            text-align: center; /* Alinea el texto y los botones al centro */
+            background-color: #f8e0e0;
+            /* Color de fondo romántico */
+            text-align: center;
+            /* Alinea el texto y los botones al centro */
             font-family: Arial, Helvetica, sans-serif;
         }
+
         h1 {
-            font-family: "Garamond", serif; /* Fuente romántica */
-            color: #8b0000; /* Color de texto romántico */
-            margin-bottom: 20px; /* Espacio entre el título y los botones */
+            font-family: "Garamond", serif;
+            /* Fuente romántica */
+            color: #8b0000;
+            /* Color de texto romántico */
+            margin-bottom: 20px;
+            /* Espacio entre el título y los botones */
         }
+
         .button-link {
             text-decoration: none;
         }
+
         button {
-            background-color: #ffb6c1; /* Color de fondo del botón romántico */
-            border: none; /* Quita el borde del botón */
-            padding: 10px 20px; /* Espacio interno del botón */
-            font-size: 16px; /* Tamaño de la fuente */
-            font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
-            color: #8b0000; /* Color del texto del botón */
-            cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
-            border-radius: 5px; /* Borde redondeado */
-            margin: 0 10px; /* Margen entre los botones */
-            transition: background-color 0.3s, transform 0.3s, font-family 0.3s; /* Animaciones */
+            background-color: #ffb6c1;
+            /* Color de fondo del botón romántico */
+            border: none;
+            /* Quita el borde del botón */
+            padding: 10px 20px;
+            /* Espacio interno del botón */
+            font-size: 16px;
+            /* Tamaño de la fuente */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Fuente predeterminada */
+            color: #8b0000;
+            /* Color del texto del botón */
+            cursor: pointer;
+            /* Cambia el cursor al pasar por encima del botón */
+            border-radius: 5px;
+            /* Borde redondeado */
+            margin: 0 10px;
+            /* Margen entre los botones */
+            transition: background-color 0.3s, transform 0.3s, font-family 0.3s;
+            /* Animaciones */
         }
+
         button:hover {
-            background-color: #ff69b4; /* Cambia el color de fondo al pasar el cursor */
-            transform: scale(1.1); /* Aumenta el tamaño del botón */
-            font-family: "Garamond", serif; /* Cambia la fuente por una romántica */
+            background-color: #ff69b4;
+            /* Cambia el color de fondo al pasar el cursor */
+            transform: scale(1.1);
+            /* Aumenta el tamaño del botón */
+            font-family: "Garamond", serif;
+            /* Cambia la fuente por una romántica */
         }
         @media only screen and (max-width: 600px) {
             .lista{
@@ -46,17 +69,14 @@
         }
     </style>
 </head>
+
 <body>
     <h1>HOLA BABY<br> SELECCIONA UNA OPCION</h1>
-        <div class="lista">
+    <div class="lista">
         <a class="button-link" href="html/rexi.html"><button>Di que si</button></a>
         <a class="button-link" href="html/flores.html"><button>Flores</button></a>
-        <a class="button-link" href="index.html"><button onclick="disponible()">Letras</button></a>
+        <a class="button-link" href="html/citas.html"><button>Letras</button></a>
     </div>
-    <script>
-        function disponible(){
-            alert("Aun no disponoble");
-        }
-    </script>
 </body>
+
 </html>
