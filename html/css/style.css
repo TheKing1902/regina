@@ -109,9 +109,110 @@ canvas {
       }
 }
 
-@media (max-width: 468px) {
+@media only screen and (max-width: 600px) {
     body {
-        background: linear-gradient(100deg, blue, purple, pink);
-
+        margin: 0;
+        font-family: 'Inclusive Sans', sans-serif;
+        background: linear-gradient(70deg, blue, purple, pink);
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 50px; /* Reducir el tamaño del texto para dispositivos móviles */
+    }
+    
+    .Con-2 {
+        display: none;
+    }
+    
+    canvas {
+        display: block;
+        margin: 0 auto; /* Centrar el canvas en dispositivos móviles */
+        max-width: 100%; /* Ajustar el tamaño máximo del canvas a la pantalla */
+    }
+    
+    .Contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .Con {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que los botones se envuelvan en dispositivos móviles */
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .Texto {
+        display: none;
+    }
+    
+    .Texto h2 {
+        font-size: 30px; /* Reducir el tamaño del texto para dispositivos móviles */
+    }
+    
+    #B12 {
+        margin-left: 15px; /* Reducir el margen izquierdo entre los botones para dispositivos móviles */
+    }
+    
+    .Button {
+        font-family: monospace;
+        font-size: large; /* Reducir el tamaño de fuente de los botones para dispositivos móviles */
+        padding: 8px; /* Reducir el relleno de los botones para dispositivos móviles */
+        border-radius: 6px; /* Reducir el radio del borde de los botones para dispositivos móviles */
+    }
+    
+    .Button:hover {
+        transform: scale(1.05); /* Reducir el factor de escala al pasar el ratón sobre los botones en dispositivos móviles */
+    }
+    
+    .Contenedor-Binicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .Con-Emergente {
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+    }
+    
+    .cua {
+        display: none;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%; /* Ajustar el ancho del elemento emergente al 90% del ancho de la pantalla */
+        max-width: 300px; /* Establecer un ancho máximo para el elemento emergente */
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 2px solid greenyellow;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        animation: aparecer 0.5s ease-out;
+    }
+    
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+            transform: translateX(-50%) translateY(-20px);
+        }
+        50% {
+            opacity: 0.5;
+            transform: translateX(-50%) translateY(-10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
     }
 }
