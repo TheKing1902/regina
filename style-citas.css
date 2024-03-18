@@ -1,0 +1,98 @@
+/* Estilos Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .contenido-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    /* border: 1px solid black; */
+  }
+  
+  /* Contenedor */
+  
+  .contenedor {
+    width: 80vw;
+    max-width: 600px;
+    min-height: 500px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+  }
+  
+  .contenedor-interno {
+    width: 80%;
+  }
+  
+  /* Contenido */
+  
+  #titulo {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #cita {
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+  }
+  
+  #autor {
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  #boton-cambiar-cita {
+    margin-top: 10px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    #autor {
+      font-size: 22px;
+      width: 50%;
+    }
+  
+    #cita{
+      font-size: 20px;
+      margin: 60px;
+    }
+  
+    #boton-cambiar-cita {
+      width: 140px;
+    height: 40px;
+    font-size: 16px;
+    }
+  
+  
+  
+  }
