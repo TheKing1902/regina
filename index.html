@@ -35,11 +35,23 @@
             transform: scale(1.1); /* Aumenta el tamaño del botón */
             font-family: "Garamond", serif; /* Cambia la fuente por una romántica */
         }
+        @media only screen and (max-width: 600px) {
+            .lista{
+                display: flex;
+                flex-direction: column;
+            }
+            .button-link{
+                padding-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>HOLA BABY<br> SELECCIONA UNA OPCION</h1>
-    <a class="button-link" href="html/rexi.html"><button>Di que si</button></a>
-    <a class="button-link" href="html/flores.html"><button>Flores</button></a>
+        <div class="lista">
+        <a class="button-link" href="html/rexi.html"><button>Di que si</button></a>
+        <a class="button-link" href="html/flores.html"><button>Flores</button></a>
+        <a class="button-link" href="html/razones.html"><button>13 Razones</button></a>
+    </div>
 </body>
 </html>
